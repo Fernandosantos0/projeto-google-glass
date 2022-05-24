@@ -5,7 +5,7 @@
 		<title>Projeto: acender lâmpada em JavaScript</title>
 		<!-- css -->
 		<style rel="stylesheet" type="text/css">
-			@import url('./_css/folhaEstilo.css'); /* Importado as regras css */
+			@import url('./css/folhaEstilo.css'); /* Importado as regras css */
 		</style>
 	</head>
 	<body>
@@ -14,7 +14,7 @@
 		</header>
 		
 		<main id="principal">
-			<img src="./_imagens/lampada-apagada-removebg-preview.png" alt="Imagem de uma lâmpada" class="img-dinamica" id="imagem-dinamica" onmouseenter="lampadaAcesa()" ondblclick="lampadaQuebrada()" onclick="lampadaApagada()" onmouseout="lampadaApagada()"/>
+			<img src="./imagens/lampada-apagada-removebg-preview.png" alt="Imagem de uma lâmpada" class="img-dinamica" id="imagem-dinamica" onmouseenter="lampadaAcesa()" ondblclick="lampadaQuebrada()" onclick="lampadaApagada()" onmouseout="lampadaApagada()"/>
 		</main>			
 
 		<!-- JS -->
@@ -26,17 +26,17 @@
 
 			//Função para a lâmpada acede
 			const lampadaAcesa = () => {
-				imgDinamica.src = './_imagens/lampada-acesa.png';
+				imgDinamica.src = './imagens/lampada-acesa.png';
 			};
 
 			//Função para a lâmpada quebrada
 			const lampadaQuebrada = () => {
-				imgDinamica.src = "./_imagens/lampada-quebrada.png";
+				imgDinamica.src = "./imagens/lampada-quebrada.png";
 			};
 
 			//Função para apagar a lâmpada
 			const lampadaApagada = () => {
-				imgDinamica.src = "./_imagens/lampada-apagada.png";
+				imgDinamica.src = "./imagens/lampada-apagada.png";
 			};
 			
 		</script>
