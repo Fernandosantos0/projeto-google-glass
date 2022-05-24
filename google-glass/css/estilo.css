@@ -41,14 +41,14 @@
 /* Carregando fonte interna */
 @font-face { /* Fonte Bubblegum */
 	font-family: "Fonte Logo";
-	src: url('./../_fonts/bubblegum-sans-regular.otf') format('otf'),
-		url('./../_fonts/bubblegum-sans-regular.woff') format('woff');
+	src: url('./../fonts/bubblegum-sans-regular.otf') format('otf'),
+		url('./../fonts/bubblegum-sans-regular.woff') format('woff');
 }
 
 @font-face { /* Fonte Computer Font */
 	font-family: "Computer Font"; 
-	src: url('./../_fonts/computer-font.ttf') format('ttf'),
-		url('./../_fonts/computer-font.woff') format('woff');
+	src: url('./../fonts/computer-font.ttf') format('ttf'),
+		url('./../fonts/computer-font.woff') format('woff');
 }
 
 /* Variáveis css */
@@ -116,7 +116,7 @@ div#interface {
 header#cabecalho {
 	height: 150px;
 	border-bottom: 1px solid #606060;
-	background: url('./../_imagens/glass-logo-peq.jpg') no-repeat left 90px;
+	background: url('./../imagens/glass-logo-peq.jpg') no-repeat left 90px;
 }
 
 header#cabecalho h1 {
