@@ -1,0 +1,58 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+@charset "UTF-8";
+
+video,
+audio {
+	display: block;
+}
+
+.dimensao-video {
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#tv-radio {
+	width: 900px;
+	height: 580px;
+	margin-left: auto;
+	margin-right: auto;
+	background: url("./../_imagens//radio-tv.png") no-repeat;
+	position: relative;
+}
+
+div#tv-radio audio#musica {
+	position: absolute;
+	bottom: 35px;
+	right: 36px;
+	width: 300px;
+}
+
+div#tv-radio video#filme {
+	position: absolute;
+	bottom: 215px;
+	right: 375px;
+	width: 440px;
+}
+
+span.video-erro {
+	color: red;
+	font-weight: 500;
+	font-style: italic;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 2px;
+}
+
+span#download-video {
+	color: #888;
+}
+
+span#download-video a:hover {
+	color: green;
+}

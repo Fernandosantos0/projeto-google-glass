@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Álbum de fotos do Google Grass</title>
+        <!-- SEO -->
+        <meta name="description" content="Álbum de fotos do Google Glass"/>
+        <meta name="keywords" content="álbum, fotos, google, glass, foto, produtos, tecnologia"/>
+        <meta name="generator" content="Visual Studio Code"/>
+        <meta name="author" content="Fernando Santos"/>
+        <link rel="author" href="https://github.com/Fernandosantos0"/>
+        <meta rel="prev" href="./index.html"/>
+        <link rel="next" href="./fale-conosco.html"/>
+        <link rel="next" href="./multimidia.html"/>
+        <link rel="next" href="./specs.html"/>
+        <!-- favicon -->
+        <link rel="shortcut icon" href="./_imagens/favicon.ico" sizes="512x512" type="image/x-icon"/>
+
+        <!-- html5shiv.js -->
+        <!--[if lt IE 9]>
+            <script src="./_javascript/html5shiv-printshiv.js"></script>
+        <![endif]-->
+
+        <!-- css -->
+        <link rel="stylesheet" type="text/css" media="all" href="./_css/normalize.css"/>
+        <link rel="stylesheet" type="text/css" media="all" href="./_css/estilo.css"/>
+        <link rel="stylesheet" type="text/css" media="all" href="./_css/fotos.css"/> 
+    </head>
+    <body>
+        <!-- Interface da página -->
+        <div id="interface">
+            <!-- Topo da página -->
+            <header id="cabecalho">
+                
+                <hgroup>
+                    <h1>Google Glass</h1>
+                    <h2>A revolução do Google está chegando</h2>
+                </hgroup>
+
+                <img src="./_imagens/glass-oculos-preto-peq.png" id="icone"/> <!-- Imagem dinâmica do menu -->
+
+                <!-- Menu de navegação -->
+                <nav id="menu">
+                    <h1>Menu Principal</h1>
+                    <!-- Lista dos links da página interna do site -->
+                    <ul>
+                        <li onmouseover="mudaFoto('./_imagens/home.png')" onmouseout="mudaFoto('./_imagens/fotos.png')">
+                            <a rel="prev" target="_self" href="./index.html" hreflang="pt-BR">Home</a>
+                        </li>
+
+                        <li onmouseover="mudaFoto('./_imagens/especificacoes.png')" onmouseout="mudaFoto('./_imagens/fotos.png')">
+                            <a rel="next" target="_self" href="./specs.html" hreflang="pt-BR">Especificações</a>
+                        </li>
+
+                        <li onmouseover="mudaFoto('./_imagens/fotos.png')" onmouseout="mudaFoto('./_imagens/fotos.png')">
+                            <a rel="next" target="_self" href="./fotos.html" hreflang="pt-BR">Fotos</a>
+                        </li>
+
+                        <li onmouseover="mudaFoto('./_imagens/multimidia.png')" onmouseout="mudaFoto('./_imagens/fotos.png')">
+                            <a rel="next" target="_self" href="./multimidia.html" hreflang="pt-BR">Multimídia</a>
+                        </li>
+
+                        <li onmouseover="mudaFoto('./_imagens/contato.png')" onmouseout="mudaFoto('./_imagens/fotos.png')">
+                            <a rel="next" target="_self" href="./fale-conosco.html" hreflang="pt-BR">Fale conosco</a>
+                        </li>
+                    </ul> <!-- /Lista dos links da página interna do site -->
+                </nav> <!-- /Menu de navegação -->
+            </header> <!-- /Topo da página -->
+
+            <section id="corpo-full">
+                <article id="noticia-principal">
+                    <header id="cabecalho-artigo">
+                        <hgroup>
+                            <h3>Glass > Fotos</h3>
+                            <h1>Galeria de Imagens do Google Glass</h1>
+                            <h2>por Gustavo Guanabara</h2>
+                            <h3 class="direita">Atualizado em <time datetime="2013-04-01">01/Maio/2013</time></h3>
+                        </hgroup>
+                    </header>
+
+                    <p>Veja na nossa galeria de fotos várias belas imagens que mostram algumas das principais características do Google Glass, como recursos e propriedades que estão impressionando o mundo inteiro. Basta passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve descrição.</p>
+
+                    <ul id="album-fotos">
+                        <li id="foto01"><span>Agenda e lembretes</span></li>
+                        <li id="foto02"><span>Sergey Brin usando o Glass</span></li>
+                        <li id="foto03"><span>Leve e compacto</span></li>
+                        <li id="foto04"><span>Sensação de uma tela de 50"</span></li>
+                        <li id="foto05"><span>Vários tipos de lente</span></li>
+                        <li id="foto06"><span>Informações importantes</span></li>
+                    </ul>
+                </article>
+            </section>
+
+            <!-- Rodapé -->
+            <footer id="rodape">
+                <p>&copy;Copyright <time id="ano"></time> - by Gustavo Guanabara <br/>
+                <a rel="external" target="_blank" href="https://www.facebook.com/groups/1520234831617060" hreflang="pt-BR">Facebook</a> | 
+                <a rel="external" target="_blank" href="https://twitter.com/cursosemvideo" hreflang="pt-BR">Twitter</a> | 
+                <a rel="external" target="_blank" href="https://www.instagram.com/cursoemvideo/" hreflang="pt-BR">Instagram</a> | 
+                <a rel="external" target="_blank" href="https://www.youtube.com/c/CursoemV%C3%ADdeo" hreflang="pt-BR">YouTube</a></p>
+            </footer> <!-- /Rodapé -->
+
+        </div> <!-- /Interface da página -->
+
+        <!-- JavaScript -->
+        <script type="text/javascript" src="./_javascript/funcoes.js"></script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+@charset "UTF-8";
+
+section#conteudo {
+    width: 1000px;
+    margin: auto;
+}
+
+iframe#frame-spec {
+    width: 370px;
+    height: 310px;
+    border: none;
+    overflow: hidden;
+}
+
+iframe#frame-spec::-webkit-scrollbar {
+    display: none;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Projeto: acender lâmpada em JavaScript</title>
+		<!-- css -->
+		<style rel="stylesheet" type="text/css">
+			@import url('./_css/folhaEstilo.css'); /* Importado as regras css */
+		</style>
+	</head>
+	<body>
+		<header id="cabeaclho">
+			<h1>Acenda lâmpada</h1>
+		</header>
+		
+		<main id="principal">
+			<img src="./_imagens/lampada-apagada.png" alt="Imagem de uma lâmpada" class="img-dinamica" id="imagem-dinamica" onmouseenter="mudaLampada(1)"  onmouseout="mudaLampada(2)" onclick="mudaLampada(3)"/>
+		</main>			
+
+		<!-- JS -->
+		<script type="text/javascript">
+
+			var arquivo = null;
+			var quebrada = false;
+
+			const mudaLampada = function(tipo) {
+
+				if(tipo === 1) {
+					arquivo = './_imagens/lampada-acesa.jpg';
+				} else if(tipo === 2) {
+					arquivo = './_imagens/lampada-apagada.jpg';
+				} else if(tipo === 3) {
+					arquivo = './_imagens/lampada-quebrada.jpg';
+				}
+
+				//Verifiucando se a lâmpada esta quebrada
+				if (!quebrada) {
+					document.querySelector("img.img-dinamica").src = arquivo;
+				} else if (tipo === 3) {
+					quebrada = true;
+				}
+			};
+
+		</script>
+	</body>
+</html>

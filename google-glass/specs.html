@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
+        <title>Especificação do Google Glass</title>
+        <!-- favicon -->
+        <link rel="shortcut icon" href="./_imagens/favicon.ico" sizes="512x512" type="image/x-icon"/>
+        <!-- SEO -->
+        <meta name='viewport' content='width=device-width, initial-scale=1'/>
+        <meta name="description" content="Aqui você terá a especificação técnica bem detalhada sobre o Google Glass"/>
+        <meta name="keywords" content="Google, Glass, especificação, técnica, tudo, produto, tecnologia"/>
+        <meta name="generator" content="Visual Studio Code"/>
+        <meta name="author" content="Fernando Santos"/>
+        <link rel="author" href="https://github.com/Fernandosantos0"/>
+        <link rel="prev" href="./index.html"/>
+        <link rel="next" href="./google-glass.html"/>
+        <link rel="next" href="./fale-conosco.html"/>
+        <link rel="next" href="./fotos.html"/>
+        <link rel="next" href="./multimidia.html"/>
+
+        <!-- html5shiv.js -->
+        <!--[if lt IE 9]>
+            <script src="./_javascript/html5shiv-printshiv.js"></script>
+        <![endif]-->
+
+        <!-- css -->
+        <link rel="stylesheet" type="text/css" media="all" href="./_css/normalize.css"/>
+        <link rel="stylesheet" type="text/css" media="all" href="./_css/estilo.css"/>
+        <link rel="stylesheet" type="text/css" media="all" href="./_css/specs.css"/>
+    </head>
+    <body>
+        
+        <!-- Div conteiner -->
+        <div id="interface">
+            <!-- Topo da página -->
+            <header id="cabecalho">
+
+                <hgroup>
+                    <h1>Google Glass</h1>
+                    <h2>A revolução do Google está chegando</h2>
+                </hgroup>
+        
+                <img src="./_imagens/glass-oculos-preto-peq.png" id="icone">
+                
+                <!-- Menu de navegação -->
+                <nav id="menu">
+                    <h1>Menu Principal</h1>
+                    <ul>
+                        <li onmouseover="mudaFoto('./_imagens/home.png')" onmouseout="mudaFoto('./_imagens/especificacoes.png')">
+                            <a rel="prev" target="_self" href="./index.html" hreflang="pt-BR">Home</a>
+                        </li>
+
+                        <li onmouseover="mudaFoto('./_imagens/especificacoes.png')" onmouseout="mudaFoto('./_imagens/especificacoes.png')">
+                            <a rel="next" target="_self" href="./specs.html" hreflang="pt-BR">Especificações</a>
+                        </li>
+
+                        <li onmouseover="mudaFoto('./_imagens/fotos.png')" onmouseout="mudaFoto('./_imagens/especificacoes.png')">
+                            <a rel="next" target="_self" href="./fotos.html" hreflang="pt-BR">Fotos</a>
+                        </li>
+
+                        <li onmouseover="mudaFoto('./_imagens/multimidia.png')" onmouseout="mudaFoto('./_imagens/especificacoes.png')">
+                            <a rel="next" target="_self" href="./multimidia.html" hreflang="pt-BR">Multimídia</a>
+                        </li>
+
+                        <li onmouseover="mudaFoto('./_imagens/contato.png')" onmouseout="mudaFoto('./_imagens/especificacoes.png')">
+                            <a rel="next" target="_self" href="./fale-conosco.html" hreflang="pt-BR">Fale conosco</a>
+                        </li>
+                    </ul>
+                </nav> <!-- /Menu de navegação -->
+
+            </header> <!-- /Topo da página -->
+
+            <section id="corpo-full">
+                <article id="noticia-principal">
+                    <header id="cabecalho-artigo">
+                        <hgroup>
+                            <h3>Glass > Especificações</h3>
+                            <h1>Raio-X no Google Glass</h1>
+                            <h2>por Gustavo Guanabara</h2>
+                            <h3 class="direita">Atualizado em <time datetime="2013-04-01">01/Maio/2013</time></h3>
+                        </hgroup>
+                    </header>
+
+                    <p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+
+                    <section id="conteudo">
+                        <img src="./_imagens/glass-esquema-marcado.jpg" alt="Imagem do Google Glass" usemap="#meumapa" />
+                        <!-- Link mapeado -->
+                        <map name="meumapa">
+                            <area shape="rect" coords="179,202,270,260" href="./google-glass.html#tela" target="janela">
+
+                            <area shape="circle" coords="158,243,12" href="./google-glass.html#camera" target="janela">
+
+                            <area shape="poly" coords="28,143,83,216,84,249,27,169" href="./google-glass.html#sensore" target="janela"/>
+
+                            <area shape="circle" coords="73,52,12" href="./google-glass.html#gatgets" target="janela"/>
+                        </map>
+
+                        <iframe src="./google-glass.html" frameborder="0" name="janela" id="frame-spec"></iframe>
+                    </section>
+                </article>
+            </section>
+
+            <!-- Rodapé -->
+            <footer id="rodape">
+                <p><em>&copy;Copyright <time id="ano"></time></em> - by Gustavo Guanabara <br/>
+                <a rel="external" target="_black" href="https://www.facebook.com/groups/1520234831617060" hreflang="pt-BR">Facebook</a> | 
+                <a rel="external" target="_black" href="https://twitter.com/cursosemvideo" hreflang="pt-BR">Twitter</a> | 
+                <a rel="external" target="_black" href="https://www.instagram.com/cursoemvideo/" hreflang="pt-BR">Instagram</a> | 
+                <a rel="external" target="_blank" href="https://www.youtube.com/c/CursoemV%C3%ADdeo" hreflang="pt-BR">YouTube</a></p>
+            </footer> <!-- /Rodapé -->
+        
+        </div> <!-- /Div conteiner -->
+
+        <!-- JavaScript -->
+        <script type="text/javascript" src="./_javascript/funcoes.js"></script>
+    </body>
+</html>

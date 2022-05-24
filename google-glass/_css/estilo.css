@@ -1,0 +1,342 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+/* Codificação unicode */
+@charset "UTF-8";
+
+/* 
+* API de Fontes do Google Fonts 
+* Link do site do Google Fonts: https://fonts.google.com/
+*/
+
+/* Fonte Ubuntu */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Fonte Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Fonte Oswald */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+/* Fonte Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Fonte Finger Paint */
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+/* Fonte Titillium Web */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+/* Carregando fonte interna */
+@font-face { /* Fonte Bubblegum */
+	font-family: "Fonte Logo";
+	src: url('./../_fonts/bubblegum-sans-regular.otf') format('otf'),
+		url('./../_fonts/bubblegum-sans-regular.woff') format('woff');
+}
+
+@font-face { /* Fonte Computer Font */
+	font-family: "Computer Font"; 
+	src: url('./../_fonts/computer-font.ttf') format('ttf'),
+		url('./../_fonts/computer-font.woff') format('woff');
+}
+
+/* Variáveis css */
+:root {
+	/* Fontes */
+	--fonte01: 'Ubuntu', sans-serif; 
+	--fonte02: 'Roboto', sans-serif;
+	--fonte03: 'Oswald', sans-serif;
+	--fonte04: "Fonte Logo", sans-serif;
+
+	/* Cores de fundo (background) */
+	--cor-fundo01: rgb(202, 202, 202);
+}
+
+/* Estilo global */
+* {
+    box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+*::-moz-selection {
+	background-color: #669EFE;
+	color: #fff;
+}
+
+*::selection {
+	background-color: #669EFE;
+	color: #fff;
+}
+
+p {
+	font-family: 'Ubuntu', sans-serif;
+	text-align: justify;
+	line-height: 1.4em;
+	text-indent: 1.3em;
+	font-size: 18px;
+}
+
+body {
+	background-color: #ddd;
+	font-family: Arial, sans-serif;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* Estilo da interface geral da página */
+div#interface {
+	width: 900px;
+	margin: -21px auto 0px auto;
+	background-color: rgb(255, 255, 255);
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+	        box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+	padding: 11px;
+}
+
+/* Estilo do cabeçalho da página */
+header#cabecalho {
+	height: 150px;
+	border-bottom: 1px solid #606060;
+	background: url('./../_imagens/glass-logo-peq.jpg') no-repeat left 90px;
+}
+
+header#cabecalho h1 {
+	font-family: 'Fonte Logo', sans-serif;
+	font-size: 30pt;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgb(0, 0, 0, .5);
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+	/* font-family: 'Finger Paint', cursive; */
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 15pt;
+	padding: 0px;
+	margin-top: 0px;
+}
+
+header#cabecalho > img#icone {
+	position: absolute;
+	left: 960px;
+	top: 40px;
+}
+
+/* Estilo do menu de navegação da página */
+nav#menu h1 {
+	display: none;
+}
+
+nav#menu ul {
+	list-style-position: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -20px;
+	left: 420px
+}
+
+nav#menu li {
+	display: inline-block;
+	background-color: var(--cor-fundo01);
+	padding: 10px;
+	margin: 2px;
+	border-radius: 0px 0px 5px 5px;
+	-webkit-transition: 2s background-color;
+	-o-transition: 2s background-color;
+	transition: 2s background-color;
+}
+
+nav#menu li:hover {
+	background-color: #606060;
+}
+
+nav#menu a {
+	text-decoration: none;
+	color: rgba(0, 0, 0, 1);
+	-webkit-transition: 2s all;
+	-o-transition: 2s all;
+	transition: 2s all;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+nav#menu a:hover {
+	text-decoration: underline;
+	color: rgba(255, 255, 255, 1);
+}
+
+section#corpo {
+	width: 490px;
+	float: left;
+	border-right: 1px solid #606060;
+	padding-right: 20px;
+}
+
+section#corpo article#noticia-principal h2 {
+	font-size: 12pt;
+	color: #606060;
+	background: var(--cor-fundo01);
+	padding: 5px 0px 5px 10px;
+	margin: 10px 0px 10px 0px
+}
+
+header#cabecalho-artigo h1 {
+	font-family: "Fonte Logo", sans-serif;
+	font-size: 20pt;
+	color: #606060;
+	margin-top: 0px;
+	margin-bottom: 0px;
+} 
+
+header#cabecalho-artigo h2 {
+	font-size: 13pt;
+	color: #cecece;
+	background-color: none;
+	margin-bottom: 0px;
+}
+
+header#cabecalho-artigo h3 {
+	font-size: 12px;
+	color: #606060;
+}
+
+
+.direita {
+	text-align: right;
+}
+
+aside#lateral {
+	width: 350px;
+	float: right;
+	background: var(--cor-fundo01);
+	padding: 15px;
+	margin-top: 10px;
+	-webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+	        box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
+aside#lateral h1 {
+	font-family: "Fonte Logo", sans-serif;
+	font-size: 20pt;
+	color: #606060;
+}
+
+aside#lateral h2 {
+	background: #606060;
+	font-size: 13pt;
+	color: #fff;
+	padding: 5px;
+}
+
+/* Estilo de imagem com legenda */
+figure.foto-legenda {
+	position: relative;
+	border: 8px solid #fff;
+	-webkit-box-shadow: 1px 1px 4px black;
+	        box-shadow: 1px 1px 4px black;
+}
+
+figure.foto-legenda > img {
+	width: 100%;
+	height: 100%;
+}
+
+figure.foto-legenda > figcaption {
+	opacity: 0;
+	cursor: pointer;
+	display: black;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	padding: 15px;
+	background-color: rgba(0, 0, 0, .4);
+	color: white;
+	-webkit-transition: 2s all;
+	-o-transition: 2s all;
+	transition: 2s all;
+}
+
+figure.foto-legenda > figcaption:hover {
+	opacity: 1;
+} 
+
+figure.foto-legenda figcaption h3 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 35px;
+	text-align: center;
+	letter-spacing: 2px;
+}	
+
+figure.foto-legenda figcaption p {
+	font-size: 18px;
+}
+
+/* Estilo da tabela de especificação do Google Grass */
+table#tabelaspec {
+	border: 1px solid #606060;
+	border-collapse: collapse;
+	margin: auto;
+	table-layout: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+table#tabelaspec caption {
+	color: #888;
+	font-size: 12pt;
+	font-weight: bolder;
+}
+
+table#tabelaspec span time {
+	display: block;
+	float: right;
+	font-size: 8pt;
+	margin-top: 0px;
+	color: #000;
+}
+
+table#tabelaspec th,
+table#tabelaspec td {
+	border: solid 1px #606060;
+	padding: 10px;
+}
+
+table#tabelaspec th {
+	color: white;
+	background: #606060;
+	vertical-align: top;
+	font-weight: 900;
+}
+
+table#tabelaspec td {
+	background: var(--cor-fundo01);
+}
+
+/* Estilo do rodapé da página */
+footer#rodape {
+	clear: both;
+	border-top: 1px solid #606060
+}
+
+footer#rodape p {
+	text-align: center;
+}
