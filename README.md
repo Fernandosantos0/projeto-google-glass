@@ -2,4 +2,4 @@
 Criação de um site completo sobre o Google Glass
 
 
-<p>https://fernandosantos0.github.io/projeto-google-glass/google-glass/<p>
+<p>https://fernandosantos0.github.io/projeto-google-glass/<p>
